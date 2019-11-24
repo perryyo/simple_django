@@ -25,7 +25,7 @@ SECRET_KEY = 'ghsy4_a=b&c*0zvc7$vpv0_o$s3%=de06sek6!4(=a^b0x7nfz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -117,4 +117,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+#STATIC_URL = '/static/'
+LANGUAGE_CODE = 'ja'
+TIME_ZONE = 'Asia/Tokyo'
 STATIC_URL = '/static/'
+STATIC_ROOT = '/usr/share/nginx/html/static'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/usr/share/nginx/html/media'
